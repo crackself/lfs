@@ -13,7 +13,6 @@
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="introduction.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pkgmgt.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="man-pages.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="iana-etc.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="glibc.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="zlib.xml"/>
@@ -31,7 +30,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dejagnu.xml"/>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="binutils.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gmp.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mpfr.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mpc.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="attr.xml"/>
@@ -72,7 +70,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gawk.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="findutils.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="groff.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grub.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gzip.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="iproute2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kbd.xml"/>
@@ -81,7 +78,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="patch.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tar.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="texinfo.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vim.xml"/>
 
   <!-- systemd only -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="markupsafe.xml"/>
@@ -93,7 +89,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="eudev.xml"/>
 
   <!-- Both sysv on systemd builds -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="man-db.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="procps.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="util-linux.xml"/>
 
