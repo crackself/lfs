@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../general.ent">
+  %general-entities;
+]>
+
+<sect1 id="ch-system-nano" role="wrap">
+  <?dbhtml filename="nano.html"?>
+
+  <sect1info condition="script">
+    <productname>nano</productname>
+    <productnumber>&nano-version;</productnumber>
+    <address>&nano-url;</address>
+  </sect1info>
+
+  <title>Patch-&nano-version;</title>
+
+  <indexterm zone="ch-system-nano">
+    <primary sortas="a-Nano">Nano</primary>
+  </indexterm>
+
+  <sect2 role="package">
+    <title/>
+
+    <para>The Nano package contains a small, simple text editor
+          which aims to replace Pico, the default editor in the
+          Pine package.</para>
+
+    <segmentedlist>
+      <segtitle>&buildtime;</segtitle>
+      <segtitle>&diskspace;</segtitle>
+
+      <seglistitem>
+        <seg>&nano-fin-sbu;</seg>
+        <seg>&nano-fin-du;</seg>
+      </seglistitem>
+    </segmentedlist>
+
+  </sect2>
+
+  <sect2 role="installation">
+    <title>Installation of Patch</title>
+
+    <para>Prepare Nano for compilation:</para>
+
+<screen><userinput remap="configure">./configure --prefix=/usr
+				      --sysconfdir=/etc \
+				      --enable-utf8     \
+				      --docdir=/usr/share/doc/nano-6.4</userinput></screen>
+
+    <para>Compile the package:</para>
+
+<screen><userinput remap="make">make</userinput></screen>
+
+    <para>Install the package:</para>
+
+<screen><userinput remap="install">make install</userinput></screen>
+
+  </sect2>
+
+  <sect2 id="conf-nano" role="configuration">
+    <title>Configuring Nano</title>
+
+    <indexterm zone="conf-nano">
+      <primary sortas="a-nano">Nano</primary>
+      <secondary>configuring</secondary>
+    </indexterm>
+
+    <indexterm zone="conf-nano">
+      <primary sortas="e-/etc/nanorc">/etc/nanorc</primary>
+    </indexterm>
+
+    <para>Example configuration (create as a system-wide <filename> /etc/nanorc</filename> or a personal <filename> ~/.nanorc</filename>  file) </para>
+
+<screen><userinput>
+<literal>set autoindent
+set constantshow
+set fill 72
+set historylog
+set multibuffer
+#set nohelp
+set positionlog
+set quickblank
+set regexp</literal>
+</userinput></screen>
+
+  </sect2>
+
+  <sect2 id="contents-nano" role="content">
+    <title>Contents of Nano</title>
+
+    <segmentedlist>
+      <segtitle>Installed program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed directory</segtitle>
+
+      <seglistitem>
+        <seg>nano and rnano (symlink)</seg>
+        <seg>None</seg>
+        <seg>/usr/share/nano and /usr/share/doc/nano-6.4</seg>
+      </seglistitem>
+    </segmentedlist>
+
+    <variablelist>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <?dbfo list-presentation="list"?>
+      <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="nano">
+        <term><command>nano</command></term>
+        <listitem>
+          <para>is a small, simple text editor which aims to replace Pico, 
+          the default editor in the Pine package</para>
+          <indexterm zone="ch-system-nano nano">
+            <primary sortas="b-nano">nano</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry id="rnano">
+        <term><command>nano</command></term>
+        <listitem>
+          <para>is a restricted mode for <command>nano</command></para>
+          <indexterm zone="ch-system-nano nano">
+            <primary sortas="b-nano">nano</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+
+  </sect2>
+
+</sect1>
