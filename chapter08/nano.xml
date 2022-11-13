@@ -44,10 +44,11 @@
 
     <para>Prepare Nano for compilation:</para>
 
-<screen><userinput remap="configure">./configure --prefix=/usr
+<screen><userinput remap="configure">./configure --prefix=/usr \
 				      --sysconfdir=/etc \
 				      --enable-utf8     \
-				      --docdir=/usr/share/doc/nano-6.4</userinput></screen>
+				      --docdir=/usr/share/doc/nano-6.4
+				      </userinput></screen>
 
     <para>Compile the package:</para>
 
@@ -73,8 +74,10 @@
 
     <para>Example configuration (create as a system-wide <filename> /etc/nanorc</filename> or a personal <filename> ~/.nanorc</filename>  file) </para>
 
-<screen><userinput>
-<literal>set autoindent
+<screen><userinput>cat &gt; /etc/nanorc &lt;&lt; "EOF"
+<literal># Begin /etc/nanorc
+
+set autoindent
 set constantshow
 set fill 72
 set historylog
@@ -82,8 +85,11 @@ set multibuffer
 #set nohelp
 set positionlog
 set quickblank
-set regexp</literal>
-</userinput></screen>
+set regexp
+
+# End /etc/nanorc
+</literal>
+EOF</userinput></screen>
 
   </sect2>
 
